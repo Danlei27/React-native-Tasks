@@ -10,7 +10,7 @@ import AddTask from './AddTask'
 export default class TaskList extends Component {
     state = {
         showDoneTasks: true,
-        showAddTask: true,
+        showAddTask: false,
         visibleTasks:[],
         tasks: [
             {
@@ -84,6 +84,11 @@ export default class TaskList extends Component {
                         renderItem={({item}) => <Task {...item}
                         toggleTask={this.toggleTask}/>}/>
                 </View>
+                    <TouchableOpacity  style={styles.addButton} onPress={() => this.setState({showAddTask: true})}
+                        activeOpacity={0.7}>
+                        
+                        <Icon name='plus' color={commonStyles.colors.secondary} size={20}></Icon>                  
+                    </TouchableOpacity>
             </View>
 
         )
@@ -123,5 +128,17 @@ const styles = StyleSheet.create({
         marginHorizontal: 20,
         justifyContent: 'flex-end',
         marginTop: Platform.OS === 'ios' ? 40 : 10
+    },
+    addButton: {
+        position: 'absolute',      
+        bottom: 30,
+        right:30,
+        height: 50,
+        width:50,
+        backgroundColor: '#b13b44',
+        borderRadius: 25,
+        justifyContent: 'center',
+        alignItems: 'center',
+
     }    
 })
