@@ -1008,6 +1008,11 @@
   "resolved" "https://registry.npmjs.org/@react-native-community/masked-view/-/masked-view-0.1.10.tgz"
   "version" "0.1.10"
 
+"@react-navigation/compat@5.3.10":
+  "integrity" "sha512-SbbWtkgUZGXEaENnEb/C9+QZX9ACqnWw5OPwMexkm0Y0xwnwBdF2kc1AvdwsEXU91MLVeeuBcc1gsC7e0fiNnQ=="
+  "resolved" "https://registry.npmjs.org/@react-navigation/compat/-/compat-5.3.10.tgz"
+  "version" "5.3.10"
+
 "@react-navigation/core@^5.11.0":
   "integrity" "sha512-ro54NCCW25ngoJrfKzJgKmFqabEWjIpMeGYXa54dEnIT6tEoJW0Z/C60DfhRs8nYHOSEYsDetiQk3yL48EXCVA=="
   "resolved" "https://registry.npmjs.org/@react-navigation/core/-/core-5.11.0.tgz"
@@ -1020,7 +1025,7 @@
     "react-is" "^16.13.0"
     "use-subscription" "^1.4.0"
 
-"@react-navigation/drawer@^5.8.3":
+"@react-navigation/drawer@5.8.3":
   "integrity" "sha512-EszV1g4jlZBPxlA8VLymfpDcsOWJg+0ftN/reByWoonuFBh0hHAXrXYAvvRtAPqGAK9Sm2LRNE63Jy82aIyghg=="
   "resolved" "https://registry.npmjs.org/@react-navigation/drawer/-/drawer-5.8.3.tgz"
   "version" "5.8.3"
@@ -1028,7 +1033,7 @@
     "color" "^3.1.2"
     "react-native-iphone-x-helper" "^1.2.1"
 
-"@react-navigation/native@^5.6.0":
+"@react-navigation/native@^5.0.5", "@react-navigation/native@5.6.0":
   "integrity" "sha512-P+kr2Jz8aouNmtLRsxzihApFHpp14e4eyyir2t1nc9O2KKdZ5tULPIwdYXGEX0n2ty3BnCU0xkI2ZsK+qY0YnQ=="
   "resolved" "https://registry.npmjs.org/@react-navigation/native/-/native-5.6.0.tgz"
   "version" "5.6.0"
@@ -1043,7 +1048,7 @@
   dependencies:
     "nanoid" "^3.1.9"
 
-"@react-navigation/stack@^5.6.1":
+"@react-navigation/stack@5.6.1":
   "integrity" "sha512-pbiNHKGa+7awvh+mjuvU6L05s/6qYxxs+4tY5ldCsMrqP+PoYW8/avY0lJBaByAfTZmJbHAZrtcC+rFic8NAnA=="
   "resolved" "https://registry.npmjs.org/@react-navigation/stack/-/stack-5.6.1.tgz"
   "version" "5.6.1"
@@ -5268,7 +5273,7 @@
     "react-is" "^16.8.6"
     "scheduler" "^0.17.0"
 
-"react@16.11.0":
+"react@*", "react@16.11.0":
   "integrity" "sha512-M5Y8yITaLmU0ynd0r1Yvfq98Rmll6q8AxaEe88c8e7LxO8fZ2cNgmFt0aGAS9wzf1Ao32NKXtCl+/tVVtkxq6g=="
   "resolved" "https://registry.npmjs.org/react/-/react-16.11.0.tgz"
   "version" "16.11.0"
