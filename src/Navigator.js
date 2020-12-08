@@ -5,6 +5,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer'
 import { NavigationContainer } from '@react-navigation/native'
 import Menu from './screens/Menu'
 import commonStyles from './commonStyles'
+import AuthOrApp from './screens/AuthOrApp'
 
 import Auth from './screens/Auth'
 import TaskList from './screens/TaskList'
@@ -59,6 +60,10 @@ const menuRoutes = {
 const menuNavigator = createDrawerNavigator(menuRoutes, menuConfig)
 
 const mainRoutes = {
+    AuthOrApp:{
+        name: 'AuthOrApp',
+        screen: AuthOrApp
+    },
     Auth: {
         name: 'Auth',
         screen: Auth
@@ -70,7 +75,7 @@ const mainRoutes = {
 }
             
 const mainNavigator = createSwitchNavigator(mainRoutes, {
-    initialRouteName:'Home'
+    initialRouteName:'AuthOrApp'
 })
 
 
